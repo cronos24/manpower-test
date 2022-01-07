@@ -12,7 +12,7 @@ class PassportAuthController extends Controller
     {
         $this->validate($request, [
             'name' => 'required|min:4|max:120',
-            'email' => 'required|email|max:120',
+            'email' => 'required|email|max:120|unique',
             'password' => 'required|min:8|max:10',
         ]);
  

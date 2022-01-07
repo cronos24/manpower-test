@@ -12,5 +12,10 @@ class Productos extends Model
     use HasFactory;
     protected $fillable = [
         'categories_id', 'users_id', 'name', 'quantity'
-    ];    
+    ];   
+    
+    public function categoria()
+    {
+        return $this->belongsTo(Categorias::class);
+    }
 }

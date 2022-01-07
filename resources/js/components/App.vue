@@ -23,16 +23,13 @@
                     <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                    <!-- <a class="nav-link" href="#">Link</a> -->
-                    <router-link exact-active-class="active" to="/category" class="nav-item nav-link">Category</router-link>
-                    </li>
+              
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                        CRUD
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><router-link exact-active-class="active" to="/category" class="dropdown-item">Categorias</router-link></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
